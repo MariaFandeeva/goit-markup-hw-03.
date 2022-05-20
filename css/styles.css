@@ -326,11 +326,16 @@ img {
   border: none;
   color: var(--btn-color);
   background-color: #f5f4fa;
+  text-align: center;
+  padding: 6px 22px;
 }
 .filters-btn:hover,
 .filters-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
 }
 .projects-item-title {
   font-weight: 700;
@@ -346,5 +351,22 @@ img {
   color: #757575;
 }
 .filters-list {
+  margin-bottom: 50px;
   align-items: center;
+  justify-content: center;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.projects-items {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.project-text-wraper {
+  border: 1px solid #eeeeee;
+  padding: 24px 20px;
 }
