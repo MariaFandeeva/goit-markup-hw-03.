@@ -79,6 +79,7 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 .header-logo {
   font-family: 'Raleway', Tahoma, sans-serif;
@@ -165,6 +166,8 @@ img {
   color: var(--main-title-color);
   margin-bottom: var(--tipical-margin);
   max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn-text {
   display: inline-block;
@@ -191,6 +194,10 @@ img {
 .preference-list {
   display: flex;
   justify-content: space-between;
+}
+.preference-wrapper {
+  display: flex;
+  flex-basis: calc(100% / 4-30px);
 }
 .preference-item:not(:last-child) {
   margin-right: var(--tipical-margin);
@@ -233,7 +240,7 @@ img {
 }
 .team-title {
   color: var(--title-color);
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 .team-item-title {
   font-weight: 500;
@@ -252,7 +259,12 @@ img {
   color: var(--main-text-color);
 }
 .team-wrapper {
-  border: ;
+  background-color: #fff;
+  border: 1px solid #f5f4fa;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   padding-bottom: var(--tipical-margin);
   padding-top: var(--tipical-margin);
 }
@@ -262,6 +274,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
 .footer-logo-link {
   font-family: 'Raleway';
   font-style: normal;
@@ -270,7 +286,7 @@ img {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer-logo {
   color: #ffffff;
