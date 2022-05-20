@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--шапка сайта-->
-    <header class="header">
+    <header class="header section">
       <div class="container">
         <a href="/" lang="en" class="header-logo link">Web<span class="logo">Studio</span></a>
         <nav class="header-nav">
@@ -48,93 +48,104 @@
     </header>
     <main>
       <!--герой-->
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-btn-text">Заказать услугу</button>
         </div>
       </section>
       <!--преимущества-->
-      <section class="preference">
+      <section class="preference section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="preference-list list">
-            <li class="preference-item">
-              <h3 class="preference-item-title">Внимание к деталям</h3>
-              <p class="preference-text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
+          <div class="preference-wrapper">
+            <ul class="preference-list list">
+              <li class="preference-item">
+                <h3 class="preference-item-title">Внимание к деталям</h3>
+                <p class="preference-text">
+                  Идейные соображения, а также начало повседневной работы по формированию позиции.
+                </p>
+              </li>
+              <li>
+                <h3 class="preference-item-title">Пунктуальность</h3>
+                <p class="preference-text">
+                  Задача организации, в особенности же рамки и место обучения кадров влечет за
+                  собой.
+                </p>
+              </li>
+              <li>
+                <h3 class="preference-item-title">Планирование</h3>
+                <p class="preference-text">
+                  Равным образом консультация с широким активом в значительной степени
+                  обуславливает.
+                </p>
+              </li>
+              <li>
+                <h3 class="preference-item-title">Современные технологии</h3>
+                <p class="preference-text">
+                  Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--виды работ-->
+      <section class="works section">
+        <div class="container">
+          <h2 class="works-title title-text">Чем мы занимаемся</h2>
+          <ul class="works-list list">
+            <li class="works-item">
+              <img src="./images/img-1.jpg" alt="разработка сайтов" width="370" height="294" />
             </li>
-            <li>
-              <h3 class="preference-item-title">Пунктуальность</h3>
-              <p class="preference-text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
+            <li class="works-item">
+              <img
+                src="./images/img-2.jpg"
+                alt="разработка мобтльных приложений"
+                width="370"
+                height="294"
+              />
             </li>
-            <li>
-              <h3 class="preference-item-title">Планирование</h3>
-              <p class="preference-text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
-            </li>
-            <li>
-              <h3 class="preference-item-title">Современные технологии</h3>
-              <p class="preference-text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
+            <li class="works-item">
+              <img src="./images/img-3.jpg" alt="дизайн" width="370" height="294" />
             </li>
           </ul>
         </div>
       </section>
-      <!--виды работ-->
-      <section class="works">
-        <h2 class="works-title title-text">Чем мы занимаемся</h2>
-        <ul class="works-list list">
-          <li class="works-item">
-            <img src="./images/img-1.jpg" alt="разработка сайтов" width="370" height="294" />
-          </li>
-          <li class="works-item">
-            <img
-              src="./images/img-2.jpg"
-              alt="разработка мобтльных приложений"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="works-item">
-            <img src="./images/img-3.jpg" alt="дизайн" width="370" height="294" />
-          </li>
-        </ul>
-      </section>
       <!--сотрудники-->
-      <section class="team">
-        <h2 class="team-title title-text">Наша команда</h2>
-        <ul class="team-list list">
-          <li class="team-item">
-            <img src="./images/photo1.jpg" alt="фото Игоря Демьяненко" width="270" height="260" />
-            <h3 class="team-item-title">Игорь Демьяненко</h3>
-            <p lang="en" class="team-item-text">Product Designer</p>
-          </li>
-          <li class="team-item">
-            <img src="./images/photo2.jpg" alt="фото Ольги Репиной" width="270" height="260" />
-            <h3 class="team-item-title">Ольга Репина</h3>
-            <p lang="en" class="team-item-text">Frontend Developer</p>
-          </li>
-          <li class="team-item">
-            <img src="./images/photo3.jpg" alt="фото Николая Тарасова" width="270" height="260" />
-            <h3 class="team-item-title">Николай Тарасов</h3>
-            <p lang="en" class="team-item-text">Marketing</p>
-          </li>
-          <li class="team-item">
-            <img src="./images/photo4.jpg" alt="фото Михаила Ермаковв" width="270" height="260" />
-            <h3 class="team-item-title">Михаил Ермаков</h3>
-            <p lang="en" class="team-item-text">UI Designer</p>
-          </li>
-        </ul>
+      <section class="team section">
+        <div class="container">
+          <h2 class="team-title title-text">Наша команда</h2>
+          <ul class="team-list list">
+            <li class="team-item">
+              <img src="./images/photo1.jpg" alt="фото Игоря Демьяненко" width="270" height="260" />
+              <div class="team-wrapper">
+                <h3 class="team-item-title">Игорь Демьяненко</h3>
+                <p lang="en" class="team-item-text">Product Designer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img src="./images/photo2.jpg" alt="фото Ольги Репиной" width="270" height="260" />
+
+              <h3 class="team-item-title">Ольга Репина</h3>
+              <p lang="en" class="team-item-text">Frontend Developer</p>
+            </li>
+            <li class="team-item">
+              <img src="./images/photo3.jpg" alt="фото Николая Тарасова" width="270" height="260" />
+              <h3 class="team-item-title">Николай Тарасов</h3>
+              <p lang="en" class="team-item-text">Marketing</p>
+            </li>
+            <li class="team-item">
+              <img src="./images/photo4.jpg" alt="фото Михаила Ермаковв" width="270" height="260" />
+              <h3 class="team-item-title">Михаил Ермаков</h3>
+              <p lang="en" class="team-item-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--подвал-->
-    <footer class="footer">
+    <footer class="footer section">
       <a href="./index.html" lang="en" class="footer-logo-link link"
         >Web<span class="footer-logo">Studio</span></a
       >

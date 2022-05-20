@@ -67,7 +67,10 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ------------------Header-------------------*/
 .header .container {
   display: flex;
@@ -149,7 +152,8 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  padding: 200px 452px 280px 452px;
+  padding: 200px 0 200px 0;
+  margin: auto;
 }
 .hero-title {
   font-weight: 900;
@@ -160,7 +164,7 @@ img {
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: var(--tipical-margin);
-  min-width: 696px;
+  max-width: 696px;
 }
 .hero-btn-text {
   display: inline-block;
@@ -183,9 +187,13 @@ img {
   background-color: #188ce8;
 }
 /* ------------------Preference---------------*/
-.preference {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+.preference-list {
+  display: flex;
+  justify-content: space-between;
+}
+.preference-item:not(:last-child) {
+  margin-right: var(--tipical-margin);
 }
 .preference-item-title {
   font-weight: 700;
@@ -209,12 +217,19 @@ img {
   color: var(--title-color);
   margin-bottom: 50px;
 }
-.works-item {
+.works-item:not(:nth-child(3n)) {
   margin-right: var(--tipical-margin);
 }
+
 /* ------------------Team---------------*/
 .team {
   background: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-item:not(:nth-child(4n)) {
+  margin-right: var(--tipical-margin);
 }
 .team-title {
   color: var(--title-color);
@@ -235,6 +250,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+.team-wrapper {
+  border: ;
+  padding-bottom: var(--tipical-margin);
+  padding-top: var(--tipical-margin);
 }
 /* ------------------Footer---------------*/
 .footer {
