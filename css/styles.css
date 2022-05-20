@@ -271,14 +271,10 @@ img {
 /* ------------------Footer---------------*/
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.footer-container {
-  display: flex;
-  flex-direction: column;
 }
 .footer-logo-link {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -286,7 +282,6 @@ img {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-bottom: 20px;
 }
 .footer-logo {
   color: #ffffff;
@@ -294,6 +289,9 @@ img {
 
 .contacts {
   font-style: normal;
+}
+.contacts-list {
+  display: inline-block;
 }
 
 .adress-item {
@@ -313,9 +311,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-.contacts-item {
-  padding-bottom: 9px;
 }
 
 /* ------------------Portfolio-filters---------------*/
@@ -349,4 +344,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.filters-list {
+  align-items: center;
 }
