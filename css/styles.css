@@ -50,15 +50,15 @@ img {
 }
 .visually-hidden {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  overflow: hidden;
 }
 .container {
   width: 1200px;
@@ -69,7 +69,6 @@ img {
 }
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 /* ------------------Header-------------------*/
 .header .container {
@@ -77,8 +76,6 @@ img {
   align-items: center;
 }
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
   border-bottom: 1px solid #ececec;
 }
 .header-logo {
@@ -99,11 +96,13 @@ img {
   margin-right: 93px;
 }
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding: 32px 0;
 }
 .header-link:hover,
 .header-link:focus {
@@ -226,6 +225,7 @@ img {
 }
 .works-item:not(:nth-child(3n)) {
   margin-right: var(--tipical-margin);
+  margin-bottom: 94px;
 }
 
 /* ------------------Team---------------*/
@@ -265,12 +265,13 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: var(--tipical-margin);
-  padding-top: var(--tipical-margin);
+  padding: var(--tipical-margin);
+  margin-bottom: 89px;
 }
 /* ------------------Footer---------------*/
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 .footer-logo-link {
   display: inline-block;
@@ -360,6 +361,7 @@ img {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  margin-bottom: 94px;
 }
 .projects-items {
   flex-basis: calc((100% - 90px) / 3);
@@ -367,6 +369,8 @@ img {
   margin-top: 30px;
 }
 .project-text-wraper {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   padding: 24px 20px;
 }
