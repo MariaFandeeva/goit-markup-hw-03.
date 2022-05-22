@@ -69,6 +69,7 @@ img {
 }
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* ------------------Header-------------------*/
 .header .container {
@@ -115,7 +116,7 @@ img {
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-tel {
+.header-tel-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -123,13 +124,15 @@ img {
   color: var(--header-color);
 }
 
-.header-mail {
+.header-mail-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
   margin-left: auto;
+}
+.header-mail {
   margin-right: 50px;
 }
 .header-tel:hover,
@@ -189,17 +192,17 @@ img {
   background-color: #188ce8;
 }
 /* ------------------Preference---------------*/
-
+.preference {
+  padding-bottom: 0;
+}
 .preference-list {
   display: flex;
   justify-content: space-between;
 }
-.preference-wrapper {
-  display: flex;
-  flex-basis: calc(100% / 4-30px);
-}
+
 .preference-item:not(:last-child) {
   margin-right: var(--tipical-margin);
+  max-width: 270px;
 }
 .preference-item-title {
   font-weight: 700;
@@ -225,7 +228,6 @@ img {
 }
 .works-item:not(:nth-child(3n)) {
   margin-right: var(--tipical-margin);
-  margin-bottom: 94px;
 }
 
 /* ------------------Team---------------*/
@@ -261,12 +263,7 @@ img {
 .team-wrapper {
   background-color: #fff;
   border: 1px solid #f5f4fa;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  border-radius: 0px 0px 4px 4px;
   padding: var(--tipical-margin);
-  margin-bottom: 89px;
 }
 /* ------------------Footer---------------*/
 .footer {
@@ -301,6 +298,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .adress-item:hover,
 .adress-item:focus {
@@ -344,6 +344,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin-bottom: 4px;
 }
 .projects-item-text {
   font-size: 16px;
@@ -361,7 +362,6 @@ img {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 94px;
 }
 .projects-items {
   flex-basis: calc((100% - 90px) / 3);
